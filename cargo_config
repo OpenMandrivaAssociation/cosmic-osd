@@ -10,9 +10,9 @@ replace-with = "vendored-sources"
 git = "https://github.com/jackpot51/rust-atomicwrites"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/pop-os/cosmic-protocols?rev=c8d3a1c"]
+[source."git+https://github.com/pop-os/cosmic-protocols?rev=d218c76"]
 git = "https://github.com/pop-os/cosmic-protocols"
-rev = "c8d3a1c"
+rev = "d218c76"
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/pop-os/cosmic-settings-subscriptions"]
@@ -25,6 +25,10 @@ replace-with = "vendored-sources"
 
 [source."git+https://github.com/pop-os/dbus-settings-bindings"]
 git = "https://github.com/pop-os/dbus-settings-bindings"
+replace-with = "vendored-sources"
+
+[source."git+https://github.com/pop-os/freedesktop-icons"]
+git = "https://github.com/pop-os/freedesktop-icons"
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/pop-os/glyphon.git?tag=iced-0.14-dev"]
@@ -46,9 +50,9 @@ git = "https://github.com/pop-os/softbuffer"
 tag = "cosmic-4.0"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/pop-os/window_clipboard.git?tag=pop-0.13"]
+[source."git+https://github.com/pop-os/window_clipboard.git?tag=pop-0.13-2"]
 git = "https://github.com/pop-os/window_clipboard.git"
-tag = "pop-0.13"
+tag = "pop-0.13-2"
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/pop-os/winit.git?tag=iced-xdg-surface-0.13"]
