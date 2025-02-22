@@ -10,9 +10,9 @@ replace-with = "vendored-sources"
 git = "https://github.com/jackpot51/rust-atomicwrites"
 replace-with = "vendored-sources"
 
-[source."git+https://github.com/pop-os/cosmic-protocols?rev=d218c76"]
+[source."git+https://github.com/pop-os/cosmic-protocols?rev=178eb0b"]
 git = "https://github.com/pop-os/cosmic-protocols"
-rev = "d218c76"
+rev = "178eb0b"
 replace-with = "vendored-sources"
 
 [source."git+https://github.com/pop-os/cosmic-settings-subscriptions"]
