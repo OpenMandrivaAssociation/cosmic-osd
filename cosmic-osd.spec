@@ -16,6 +16,7 @@ BuildRequires:  rust-packaging
 BuildRequires:  make
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(libpulse)
+BuildRequires:  pkgconfig(libpipewire-0.3)
 BuildRequires:  pkgconfig(libudev)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(xkbcommon)
