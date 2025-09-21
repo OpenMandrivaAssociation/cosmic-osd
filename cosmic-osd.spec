@@ -15,6 +15,7 @@ Source2:        cargo_config
 BuildRequires:  rust-packaging
 BuildRequires:  make
 BuildRequires:  pkgconfig
+BuildRequires:  pkgconfig(libinput)
 BuildRequires:  pkgconfig(libpulse)
 BuildRequires:  pkgconfig(libpipewire-0.3)
 BuildRequires:  pkgconfig(libudev)
