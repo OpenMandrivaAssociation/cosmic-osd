@@ -2,7 +2,7 @@
 
 Name:           cosmic-osd
 Version:        1.0.0
-%define beta beta.4
+%define beta beta.5
 Release:        %{?beta:0.%{beta}.}1
 Summary:        COSMIC OSD
 License:        GPL-3.0-only
