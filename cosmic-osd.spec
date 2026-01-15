@@ -1,8 +1,8 @@
 %undefine _debugsource_packages
 
 Name:           cosmic-osd
-Version:        1.0.0
-%define beta beta.7
+Version:        1.0.2
+#define beta beta.7
 Release:        %{?beta:0.%{beta}.}1
 Summary:        COSMIC OSD
 License:        GPL-3.0-only
