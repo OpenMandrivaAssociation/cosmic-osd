@@ -31,7 +31,6 @@ BuildRequires:  pkgconfig(xkbcommon)
 mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
-%build
 # By default cosmic-osd set polkit to /usr/libexec/polkit-agent-helper-1, lets force it to Mandriva dir
 # https://github.com/pop-os/cosmic-epoch/issues/1065
 #make_build polkit-agent-helper-1=/usr/lib/polkit-1/polkit-agent-helper-1
