@@ -14,6 +14,7 @@ Source2:        cargo_config
 
 BuildRequires:  rust-packaging
 BuildRequires:  make
+BuildRequires:  just
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(libinput)
 BuildRequires:  pkgconfig(libpulse)
@@ -30,13 +31,15 @@ BuildRequires:  pkgconfig(xkbcommon)
 mkdir .cargo
 cp %{SOURCE2} .cargo/config
 
-%build
 # By default cosmic-osd set polkit to /usr/libexec/polkit-agent-helper-1, lets force it to Mandriva dir
 # https://github.com/pop-os/cosmic-epoch/issues/1065
-%make_build polkit-agent-helper-1=/usr/lib/polkit-1/polkit-agent-helper-1
+#make_build polkit-agent-helper-1=/usr/lib/polkit-1/polkit-agent-helper-1
+
+%build
+just polkit-agent-helper-1=/usr/lib/polkit-1/polkit-agent-helper-1 build-release --offline --frozen
 
 %install
-%make_install DESTDIR=%{buildroot} prefix=%{_prefix}
+just rootdir=%{buildroot} prefix=%{_prefix} install
 
 %files
 %license LICENSE
