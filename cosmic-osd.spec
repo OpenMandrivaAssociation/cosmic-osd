@@ -36,6 +36,9 @@ cp %{SOURCE2} .cargo/config
 #make_build polkit-agent-helper-1=/usr/lib/polkit-1/polkit-agent-helper-1
 
 %build
+# as of cosmic 1.4.0, rust 1.97.1 and llvm 23.1.0-rc1.
+# Disable LTO because error rustc-LLVM ERROR: expected function definition _RNvCslvstGAdgBpu_7___rustc12___rust_alloc to have an associated value info.
+export RUSTFLAGS="-C lto=off"
 just polkit-agent-helper-1=/usr/lib/polkit-1/polkit-agent-helper-1 build-release --offline --frozen
 
 %install
